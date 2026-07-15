@@ -28,12 +28,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        with: # set the secret as an input
-          my_secret: ${{ secrets.MY_TEST_SECRET }}
-        run: echo Hello, world! The secret is ::add-mask::my_secret
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: echo Hello, world!
